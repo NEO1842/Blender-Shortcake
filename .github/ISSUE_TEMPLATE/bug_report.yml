@@ -1,0 +1,57 @@
+name: Bug report / 不具合報告
+description: Report a problem with the Blender file, materials, or documentation / Blenderファイル・マテリアル・ドキュメントに関する問題を報告する
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description / 概要
+      description: A clear description of the problem. / 問題の内容を簡潔に記載してください。
+    validations:
+      required: true
+  - type: input
+    id: blender-version
+    attributes:
+      label: Blender version / Blenderバージョン
+      placeholder: "e.g. 3.4.1"
+    validations:
+      required: true
+  - type: dropdown
+    id: render-engine
+    attributes:
+      label: Render engine / レンダリングエンジン
+      options:
+        - Cycles
+        - Eevee
+        - Other / その他
+    validations:
+      required: false
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / 再現手順
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: false
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior / 期待される動作
+    validations:
+      required: false
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior / 実際の動作
+    validations:
+      required: false
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots / Additional context / スクリーンショット・補足情報
+    validations:
+      required: false
