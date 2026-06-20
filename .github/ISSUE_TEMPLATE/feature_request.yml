@@ -1,0 +1,30 @@
+name: Feature request / 機能要望
+description: Suggest an idea or improvement for this project / このプロジェクトへの改善案・アイデアを提案する
+title: "[FEATURE] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Is your feature request related to a problem? / 何らかの問題に関連していますか？
+    validations:
+      required: false
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the solution you'd like / 望む解決策
+      description: e.g. new variation, additional material preset, optimization / 例：新しいバリエーション、追加のマテリアルプリセット、最適化など
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered / 検討した代替案
+    validations:
+      required: false
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context / 補足情報
+    validations:
+      required: false
